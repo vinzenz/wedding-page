@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    @font-face {
+        font-family: "Constantia";
+        src: url("fonts/Constantia-Regular.ttf") format("truetype");
+        font-style:normal;
+        font-weight:normal
+    }
+
+    @font-face {
+        font-family: "Coneria";
+        src: url("fonts/Demo_ConeriaScript.ttf") format("truetype");
+        font-style:normal;
+        font-weight:normal
+    }
+
+    #title {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 24px;
+    }
+
+    #tabs li a {
+        font-family: Constantia;
+        font-size: 11pt;
+        color: #027377;
+    }
+
+    #tabs li.active a {
+        color: #222222;
+    }
+
+    .content p {
+        font-family: Constantia;
+        font-size: 12pt;
+        color: #222222;
+    }
+    .content address {
+        font-family: Constantia;
+        font-size: 12pt;
+        color: #222222;
+    }
+
+    #map-party {
+        margin-top: 2em;
+        height: 200px;
+    }
+    #map-church {
+        margin-top: 2em;
+        height: 200px;
+    }
+
+    .popin {
+        background: #fff;
+        padding: 15px;
+        box-shadow: 0 0 20px #999;
+        border-radius: 2px;
+    }
+        .content {
+            padding: 20px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            border: 1px solid #c0c0c0c;
+            box-shadow:  0 0 20px #cccccc;
+            border-radius: 4px;
+            margin-bottom: 50px;
+        }
+
+        #tabsContent .tab-pane p {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <img id="title" src="img/title-full.jpg" style="text-align: center;" width="100%;">
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <img id="description" src="img/description.png" style="text-align: center; padding-left: 50px; padding-right: 50px; width: 100%;">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/simi-a-vinz.jpg" height="300px" class="img-thumbnail img-rounded">
+                </div>
+                <div class="col-lg-8">
+                    <ul class="nav nav-tabs" id="tabs">
+                        <li class="active"><a href="#obrad-hostina" data-toggle="tab">OBŘAD A HOSTINA</a></li>
+                        <li><a data-target="#doprava-ubytonvani" data-toggle="tab">DOPRAVA A UBYTOVÁNÍ</a></li>
+                        <li><a data-target="#co-s-sebou" data-toggle="tab">CO S SEBOU NA CHATU</a></li>
+                        <li><a data-target="#cesta-z-mesta" data-toggle="tab">CESTA Z MĚSTA</a></li>
+                    </ul>
+                    <div id="tabsContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="obrad-hostina">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>
+                                        Místem setkání, kde se bude také odehrávat obřad, je:
+                                    </p>
+                                    <address>
+                                        <strong>Římskokatolický kostel Nanebevzetí Panny Marie</strong><br>
+                                        Horní Náměstí 134<br>
+                                        755 01 Vsetín<br>
+                                    </address>
+                                    <p>Sraz je v 11:30 hodin před vstupem do kostela. Prosíme všechny, aby se dostavili včas, abychom Vás zvládli ozdobit a taky posilnit štamprlou.</p>
+                                </div>
+                                <div id="map-church" class="col-lg-6"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>
+                                        Po obřadu budeme ihned pokračovat na chatu Nivka v Semetíně, kde se bude odehrávat hostina i veselí.
+                                    </p>
+                                </div>
+                                <div id="map-party"  class="class-lg-6"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="doprava-ubytonvani">
+                            <p>Od kostela budeme odjíždět auty a autubusem. Zpět do Vašich domovů Vás odvezeme zajištěnou dopravou. Pokud přijedete vlastním vozidlem, budou zde řidiči, kteří Vás dopraví na místo určení i s Vašim autem. </p>
+                            <p>Chalupa poskytuje několik postelí k přespání, pro romantiky, dobrodruhy a odpadlíky budou také vedle chaty připraveny stany.</p>
+                            <p>Oceníme, když si případnou tábornickou výbavu přinesete vlastní (spacák, karimatku, stan).</p>
+                        </div>
+                        <div class="tab-pane fade " id="co-s-sebou">
+                            <p>Na chalupě budou připraveny party stany, které by nás měly ochránit od extrémů počasí (déšť x ostré slunce).</p>
+                            <p>Dle aktuální předpovědi počasí si tedy s sebou vezměte pohodlné oblečení, ve kterém se budete cítit dobře ( slamáky x gumáky, kraťasy x svetry, aj.)</p>
+                        </div>
+                        <div class="tab-pane fade " id="cesta-z-mesta">
+                            <p>Pokud nás chcete podpořit v dalším životním kroku, který povede k našemu odchodu z velkoměsta do krásné Valašské přírody, můžete nám svatebním darem přispět symbolickou finanční částkou k realizaci našeho snu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true&.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="application/javascript"></script>
+    <script src="js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="js/gmaps.min.js" type="application/javascript"></script>
+    <script>
+        var partyMap = null;
+        var churchMap = null;
+        $(function(){
+            partyMap = new GMaps({
+                div: '#map-party',
+                lat: 49.3530488,
+                lng: 17.9406457
+            });
+            partyMap.addMarker({
+                lat: 49.3530488,
+                lng: 17.9406457,
+                title: 'Chata'
+            });
+
+            churchMap = new GMaps({
+                div: '#map-church',
+                lat: 49.340507,
+                lng: 17.998410
+            });
+            churchMap.addMarker({
+                lat: 49.340507,
+                lng: 17.998410,
+                title: 'Kostel'
+            });
+/*
+            $("#tabs a").click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+                alert('wOOT? ' + $(this).tab().name);
+                console.log($(this));
+                console.log($(this).tab());
+            });
+*/
+            $(document).on('shown.bs.tab', 'a[data-target="#obrad-hostina"]', function (e) {
+                if(!partyMap){
+                } else {
+                    partyMap.refresh();
+                }
+                if(!churchMap) {
+                } else {
+                    churchMap.refresh();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
